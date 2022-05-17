@@ -54,6 +54,18 @@ div{
     display: flex;
 }
 
+.gothic{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.fredoka{
+    font-family: 'Fredoka One', cursive;
+}
+
+.calistoga{
+    font-family: 'Calistoga', cursive;
+}
+
 #wrap,#header,#header nav::before{
     background-color: var(--light-khaki);
 }
@@ -282,6 +294,7 @@ div{
 #container{
     width: 100%;
     min-height: calc(100% - 120px);
+    overflow: hidden;
 }
 
 /* content */
@@ -299,9 +312,21 @@ div{
     line-height: 1.07;
 }
 
+#content.main .big-title, .sub-title{
+    margin-top: 32px;
+}
+
+#content.main .sub-title{
+    font-size: 36px;
+}
+
 /* section */
 #content.main .section:not(.dal-story){
     color: var(--red-orange);
+}
+
+#content.main .section:not(.first){
+    text-align: center;
 }
 
 /* section first */
@@ -336,7 +361,7 @@ div{
 }
 
 .section.first #mainTop{
-    overflow: visible;
+    /* overflow: hidden; */
     position: relative;
     top: 206px;
 }
@@ -389,6 +414,11 @@ div{
     font-size: 20px;
 }
 
+#mainTop .swiper-slide:not(.swiper-slide-active) .text-wrap{
+    opacity: 0;
+    z-index: -1;
+}
+
 #mainTop .text-wrap .btn{
     margin-top: 32px;
     font-weight: bold;
@@ -421,4 +451,104 @@ div{
 .swiper-pagination-bullet-active{
     opacity: 1;
     background-color: var(--swiper-pagination-color);
+}
+
+/* floating */
+.floating.active{
+    overflow: visible;
+    z-index: 5;
+}
+
+.floating{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+}
+
+.floating .max-wrap{
+    position: relative;
+}
+
+.floating-content{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    max-width: 174px;
+    height: 156px;
+}
+
+.floating-content .img-wrap{
+    position: absolute;
+    right: 36px;
+    bottom: 156px;
+    height: auto;
+    overflow: hidden;
+    width: 66%;
+}
+
+.floating-content .img-wrap img{
+    display: block;
+    width: 100%;
+}
+
+.floating-content .img-wrap img.only-mo{
+    display: none;
+}
+
+.floating-content .text-wrap{
+    width: 174px;
+    height: 156px;
+    padding: 66px 24px 24px 24px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    background-color: var(--red-orange);
+    color: #ffffff;
+}
+
+.floating-content .montserrat{
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.floating-content .main-copy{
+    box-sizing: border-box;
+}
+
+.floating .btn.floating-close{
+    position: absolute;
+    bottom: 120px;
+    width: 24px;
+    height: 24px;
+    right: 32px;
+    z-index: 6;
+}
+
+/* section imagine */
+.section.imagine{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1080px;
+    height: 100vh;
+}
+
+.section.imagine .text-wrap{
+    position: relative;
+    z-index: 1;
+}
+
+.section.imagine .sub-title > strong{
+    font-weight: 700;
+}
+
+.section.imagine .text-wrap .text{
+    margin-top: 56px;
 }
