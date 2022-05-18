@@ -809,7 +809,6 @@ div{
     right: 0;
     left: 0;
     z-index: 2;
-    width: ;
     background: transparent url(img_dalkom/menu.png) repeat-x left top;
     background-size: auto 375px;
     animation: movement 20s linear infinite running;
@@ -822,4 +821,74 @@ div{
     100%{
         background-position: 3567px 0px;
     }
+}
+
+/* section new-dal */
+.section.new-dal{
+    background: var(--white);
+    padding: 250px 0 20px 0;
+}
+
+.section.new-dal .only-mo{
+    display: none;
+}
+
+.section.new-dal .visual-wrap{
+    overflow: hidden;
+    position: relative;
+    margin-top: 61px;
+    width: 100%;
+}
+
+.section.new-dal .visual-wrap ul{
+    position: absolute;
+    left: -33px;
+    right: -20px;
+    top: 271px;
+    width: calc(100% + 53px);
+}
+
+.section.new-dal .visual-wrap ul li{
+    overflow: visible;
+    width: 132px;
+    height: 187px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.section.new-dal .visual-wrap ul li:nth-child(1){
+    padding-top: 30px;
+}
+
+.section.new-dal .visual-wrap ul li:nth-child(3){
+    padding-top: 30px;
+}
+
+.section.new-dal .visual-wrap ul li:nth-child(6){
+    padding-top: 30px;
+}
+
+.section.new-dal .visual-wrap ul li:nth-child(8){
+    padding-top: 30px;
+}
+
+.section.new-dal .visual-wrap .img-app{
+    position: relative;
+    margin: 0 auto;
+    padding: 71px 111px 0 113px;
+    width: 465px;
+    height: 729px;
+    z-index: 2;
+}
+
+.section.new-dal .visual-wrap .img-app::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent url(img_dalkom/bg_phone_01.png) no-repeat center top;
+    background-size: 100% auto;
 }
