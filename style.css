@@ -330,6 +330,10 @@ div{
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+#content.main .ko-title + p{
+    margin-top: 32px;
+}
+
 /* section */
 #content.main .section:not(.dal-story){
     color: var(--red-orange);
@@ -645,16 +649,12 @@ div{
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .section.playground .text-wrap{
     z-index: 1;
     padding-bottom: 534px;
-}
-
-.section.playground .text-wrap .ko-title + p{
-    margin-top: 32px;
 }
 
 .section.playground .text-wrap p .only-mo{
@@ -711,7 +711,7 @@ div{
     width: 609px;
     height: 544px;
     left: 34%;
-    bottom: 0;
+    bottom: 0px;
 }
 
 .section.playground .img-wrap.home .mask{
@@ -726,7 +726,6 @@ div{
 
 .section.playground .img-wrap.home img{
     transform-origin: bottom center;
-    width: auto;
     height: 544px;
     display: block;
     width: 100%;
@@ -772,4 +771,55 @@ div{
 
 .section.playground .img-wrap.cir svg g path{
     stroke-miterlimit: 10;
+}
+
+/* section colorful */
+.section.colorful{
+    width: 100%;
+    padding-top: 196px;
+}
+
+.section.colorful .text-wrap{
+    z-index: 1;
+}
+
+.section.colorful .text-wrap .only-mo{
+    display: none;
+}
+
+.section.colorful .img-moving{
+    position: relative;
+    margin-top: 239px;
+    height: 375px;
+}
+
+.section.colorful .img-moving .bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 214px;
+    background: var(--white);
+}
+
+.section.colorful .img-moving .menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    width: ;
+    background: transparent url(img_dalkom/menu.png) repeat-x left top;
+    background-size: auto 375px;
+    animation: movement 20s linear infinite running;
+}
+
+@keyframes movement {
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: 3567px 0px;
+    }
 }
