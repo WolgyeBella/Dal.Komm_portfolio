@@ -549,6 +549,46 @@ div{
     font-weight: 700;
 }
 
+.section.imagine .big-title{
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 1.07;
+}
+
 .section.imagine .text-wrap .text{
     margin-top: 56px;
+}
+
+.section.imagine .parallax{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+
+.section.imagine .parallax.circle-img{
+    top: 82px;
+    right: -142px;
+    width: 419px;
+    height: 424px;
+    background-image: url(img_dalkom/circle_img.png);
+    transform: translate(138.9px, 46px);
+}
+
+.section.imagine .parallax.circle-big{
+    bottom: 90px;
+    left: -77px;
+    width: 293px;
+    height: 325px;
+    background-image: url(img_dalkom/circle_big.svg);
+    transform: translate(69.45px, 23px);
+}
+
+.section.imagine .parallax.circle-small{
+    bottom: 114px;
+    left: 216px;
+    width: 77px;
+    height: 61px;
+    background-image: url(img_dalkom/circle_small.svg);
+    transform: translate(-138.9px, -46px);
 }
