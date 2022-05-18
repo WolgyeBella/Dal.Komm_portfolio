@@ -623,10 +623,11 @@ div{
 
 .section.dal-story .sub-title + .ko-title{
     margin-top: 34px;
+    font-weight: 800;
 }
 
 .section.dal-story .sub-title strong{
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .section.dal-story .sub-title strong img{
