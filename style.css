@@ -50,8 +50,13 @@ div{
     box-sizing: border-box;
 }
 
-.flex{
+.flex, [class*="flex-"]{
     display: flex;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
 }
 
 .gothic{
@@ -591,4 +596,40 @@ div{
     height: 61px;
     background-image: url(img_dalkom/circle_small.svg);
     transform: translate(-138.9px, -46px);
+}
+
+/* section dal-story */
+
+#content.main .section.dal-story{
+    color: var(--sapphire);
+    background: transparent url(img_dalkom/bg_dal_story.svg) no-repeat center bottom;
+    background-size: auto 513px;
+    min-height: 1080px;
+    height: 100vh;
+}
+
+#content.main .ko-title{
+    font-size: 64px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.section.dal-story .only-mo{
+    display: none;
+}
+
+.section.dal-story .text-wrap{
+    padding-bottom: 448px;
+}
+
+.section.dal-story .sub-title + .ko-title{
+    margin-top: 34px;
+}
+
+.section.dal-story .sub-title strong{
+    font-weight: bold;
+}
+
+.section.dal-story .sub-title strong img{
+    height: 36px;
+    vertical-align: -5px;
 }
