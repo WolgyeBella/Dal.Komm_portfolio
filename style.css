@@ -845,7 +845,7 @@ div{
     left: -33px;
     right: -20px;
     top: 271px;
-    width: calc(100% + 53px);
+    width: calc(100% + 33px + 20px);
 }
 
 .section.new-dal .visual-wrap ul li{
@@ -856,12 +856,20 @@ div{
     text-align: -webkit-match-parent;
 }
 
+.section.new-dal .visual-wrap ul li + li{
+    margin-left: 80px;
+}
+
 .section.new-dal .visual-wrap ul li:nth-child(1){
     padding-top: 30px;
 }
 
 .section.new-dal .visual-wrap ul li:nth-child(3){
     padding-top: 30px;
+}
+
+.section.new-dal .visual-wrap ul li:nth-child(5){
+    margin-left: 447px;
 }
 
 .section.new-dal .visual-wrap ul li:nth-child(6){
