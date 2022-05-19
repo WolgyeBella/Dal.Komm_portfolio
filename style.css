@@ -40,6 +40,8 @@ li{
 
 a{
     text-decoration: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: var(--black);
 }
 
 body{
@@ -48,6 +50,21 @@ body{
 
 div{
     box-sizing: border-box;
+}
+
+select{
+    outline: none;
+    border: 0;
+    border-radius: 0;
+    appearance: none;
+}
+
+.select{
+    position: relative;
+    vertical-align: middle;
+    color: inherit;
+    background: #fff url(img_dalkom/select-plus.svg) no-repeat 100% 50%;
+    background-size: 24px 24px;
 }
 
 .flex, [class*="flex-"]{
@@ -98,6 +115,10 @@ div{
     cursor: pointer;
     background: transparent;
     box-sizing: border-box;
+}
+
+a.btn{
+    text-decoration: none;
 }
 
 /* header */
@@ -928,4 +949,197 @@ div{
     background-color: var(--tomato);
     color: white;
     border-radius: 8px;
+}
+
+/* footer */
+#footer{
+    background-color: var(--white);
+    padding: 120px 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#footer .only-mo{
+    display: none;
+}
+
+#footer > .max-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1288px;
+}
+
+#footer .logo{
+    width: 192px;
+}
+
+#footer .max-wrap:first-child > ul{
+    width: 73.6%;
+}
+
+#footer .max-wrap > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#footer .max-wrap > ul strong{
+    font-size: 18px;
+}
+
+#footer .ico{
+    display: inline-block;
+    color: var(--black);
+    /* visibility: hidden; */
+}
+
+#footer .ico.acc-arr{
+    visibility: hidden;
+}
+
+#footer .ico > span{
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    z-index: -1;
+}
+
+#footer .max-wrap > ul strong + ul{
+    margin-top: 32px;
+}
+
+#footer .max-wrap > ul a.em{
+    color: var(--orange-red);
+}
+
+#footer .max-wrap > ul strong + ul li a{
+    position: relative;
+    color: rgba(34, 34, 34, 0.7);
+}
+
+#footer .max-wrap > ul strong + ul li a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: var(--black);
+    transform: scaleX(0);
+    transform-origin: top right;
+    transition: transform 500ms ease-in-out;
+}
+
+#footer .max-wrap > ul strong + ul li a:not(.em):hover{
+    opacity: 1;
+    color: var(--black);
+}
+
+#footer .max-wrap > ul strong + ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: top left;
+}
+
+#footer .max-wrap > ul strong + ul li a.em::before{
+    background: var(--orange-red);
+    font-weight: bold;
+}
+
+#footer .max-wrap > ul strong + ul li + li{
+    margin-top: 16px;
+}
+
+#footer > .max-wrap + .max-wrap{
+    margin-top: 52px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#footer > .max-wrap + .max-wrap .select-wrap{
+    margin-top: 23px;
+}
+
+#footer > .max-wrap .select{
+    width: 307px;
+    height: 87px;
+    line-height: 87px;
+    border-bottom: 2px solid var(--black);
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    background-image: url(img_dalkom/select-plus.svg);
+}
+
+#footer .copyright-wrap{
+    width: 614px;
+}
+
+#footer .copyright{
+    padding: 52px 0 35px 0;
+    color: rgba(34, 34, 34, 0.4);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.01rem;
+}
+
+#footer .copyright a{
+    color: var(--black);
+}
+
+#footer .playstore{
+    display: flex;
+}
+
+#footer .playstore .btn.bdr{
+    border-color: rgba(34, 34, 34, 0.1);
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    line-height: calc(50px - 2px);
+}
+
+#footer .playstore .btn.qr{
+    margin-left: 16px;
+}
+
+#footer .playstore .btn.qr img{
+    bottom: 25px;
+    width: 100px;
+    position: relative;
+}
+
+.btn.bdr{
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+.btn.round{
+    border-radius: 50px;
+}
+
+.btn.medium{
+    height: 50px;
+    padding: 0 32px;
+    font-size: 16px;
+}
+
+.btn.medium > .ico{
+    margin-right: 13px;
+}
+
+.ico.apple, .google{
+    font-size: 26px;
+}
+
+#footer .playstore .btn.bdr + .btn.bdr{
+    margin-left: 12px;
 }
