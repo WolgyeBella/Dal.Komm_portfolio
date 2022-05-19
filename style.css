@@ -900,3 +900,32 @@ div{
     background: transparent url(img_dalkom/bg_phone_01.png) no-repeat center top;
     background-size: 100% auto;
 }
+
+/* section supporter */
+.section.supporter{
+    background: var(--white);
+}
+
+.section.supporter .only-mo{
+    display: none;
+}
+
+.section.supporter .bg-wrap{
+    padding: 170px;
+    color: var(--white);
+    background: var(--cobalt) url(img_dalkom/bg_supporter.png) no-repeat center bottom;
+    background-size: cover;
+}
+
+.section.supporter p + .btn{
+    margin-top: 68px;
+}
+
+.section.supporter .btn{
+    width: 279px;
+    height: 71px;
+    line-height: 71px;
+    background-color: var(--tomato);
+    color: white;
+    border-radius: 8px;
+}
