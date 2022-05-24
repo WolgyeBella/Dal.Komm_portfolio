@@ -11,14 +11,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <script src="js/lib/jquery-3.6.0.min.js"></script>
+    <script src="js/lib/gsap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/b521825f68.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
-<body data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-delay="0" class="scroll-up scroll-zero">
+<body data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-delay="0" class="scroll-has scroll-down">
     <div id="wrap" class="wrap bg-khaki">
-        <header id="header" class="header">
+        <header id="header" class="header aos-init aos-animate fixed" data-aos="fade-down">
             <div class="max-wrap">
                 <h1>
                     <a href="#"><img src="img_dalkom/dalkomm.svg" alt="DAL.KOMM" class="logo"></a>
@@ -70,9 +70,9 @@
                             <span  data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Life Happens</span>
                             <span class="outline aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">Coffee Helps</span>
                         </h2>
-                        <div id="mainTop" class="swiper">
-                            <ul class="swiper-wrapper">
-                                <li class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-label="1 / 5">
+                        <div id="mainTop" class="swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events aos-init aos-animate" data-aos="fade-down">
+                            <ul class="swiper-wrapper" id="swiper-wrapper-7eba3655s773e664">
+                                <li class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-label="1 / 5" style="width: 1396px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
                                     <div class="img-wrap">
                                         <img class="img only-pc" src="img_dalkom/tms_img_1.png" alt="dal.Komm_img">
                                         <img class="img only-mo" src="img_dalkom/tms_img_mo_1.png" alt="dal.Komm_img">
@@ -82,7 +82,7 @@
                                         <a href="#" class="btn">스토리 보러 가기</a>
                                     </div>
                                 </li>
-                                <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5">
+                                <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 1396ps; opacity: 0; transform: translate3d(-1396px, 0px, 0px);">
                                     <div class="img-wrap">
                                         <img class="img only-pc" src="img_dalkom/tms_img_2.png" alt="dal.Komm_img">
                                         <img class="img only-mo" src="img_dalkom/tms_img_mo_2.png" alt="dal.Komm_img">
@@ -92,7 +92,7 @@
                                         <a href="#" class="btn">구매하러 가기</a>
                                     </div>
                                 </li>
-                                <li class="swiper-slide" role="group" aria-label="3 / 5">
+                                <li class="swiper-slide" role="group" aria-label="3 / 5" style="width: 1396px; opacity: 0; transform: translate3d(-2792px, 0px, 0px);">
                                     <div class="img-wrap">
                                         <img class="img only-pc" src="img_dalkom/tms_img_3.png" alt="dal.Komm_img">
                                         <img class="img only-mo" src="img_dalkom/tms_img_mo_3.png" alt="dal.Komm_img">
@@ -102,7 +102,7 @@
                                         <a href="#" class="btn">메뉴 보러가기</a>
                                     </div>
                                 </li>
-                                <li class="swiper-slide" role="group" aria-label="4 / 5">
+                                <li class="swiper-slide" role="group" aria-label="4 / 5" style="width: 1396px; opacity: 0; transform: translate3d(-4188px, 0px, 0px);">
                                     <div class="img-wrap">
                                         <img class="img only-pc" src="img_dalkom/tms_img_4.png" alt="dal.Komm_img">
                                         <img class="img only-mo" src="img_dalkom/tms_img_mo_4.png" alt="dal.Komm_img">
@@ -112,7 +112,7 @@
                                         <a href="#" class="btn">이벤트 내용 확인</a>
                                     </div>
                                 </li>
-                                <li class="swiper-slide" role="group" aria-label="5 / 5">
+                                <li class="swiper-slide" role="group" aria-label="5 / 5" style="width: 1396px; opacity: 0; transform: translate3d(05584px, 0px, 0px);">
                                     <div class="img-wrap">
                                         <img class="img only-pc" src="img_dalkom/tms_img_5.png" alt="dal.Komm_img">
                                         <img class="img only-mo" src="img_dalkom/tms_img_mo_5.png" alt="dal.Komm_img">
@@ -123,7 +123,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="swiper-pagination">
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
                                 <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
                                 <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
                                 <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
                 <div class="section flex-center imagine">
-                    <section class="text-wrap">
+                    <section class="text-wrap aos-init" data-aos="fade-up">
                         <h2 class="sub-title gothic">
                             <strong>달콤, 상상이 일상이 되는 곳</strong>
                         </h2>
@@ -172,13 +172,13 @@
                         </p>
                     </section>
                     <div class="parallax-wrap">
-                        <span class="parallax circle-img"></span>
-                        <span class="parallax circle-big"></span>
-                        <span class="parallax circle-small"></span>
+                        <span class="parallax circle-img" style="transform: translate(-22.3px, 1.6px);"></span>
+                        <span class="parallax circle-big" style="transform: translate(-11.15px, 0.8px);"></span>
+                        <span class="parallax circle-small" style="transform: translate(22.3px, -1.6px);"></span>
                     </div>
                 </div>
                 <div class="section flex-center dal-story">
-                    <section class="text-wrap">
+                    <section class="text-wrap aos-init" data-aos="fade-up">
                         <h2 class="sub-title gothic">
                             <strong>
                                 환상의 바리스타
@@ -201,7 +201,7 @@
                     </section>
                 </div>
                 <div class="section flex-center playground">
-                    <section class="text-wrap">
+                    <section class="text-wrap aos-init" data-aos="fade-up">
                         <h2 class="ko-title">
                             상상이 일상이 되는 <br>
                             달콤의 놀이터
@@ -244,7 +244,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="section colorful">
+                <div class="section colorful aos-init" data-aos="fade">
                     <section class="text-wrap">
                         <h2 class="ko-title">
                             달콤이 선사하는
@@ -267,7 +267,7 @@
                     </div>
                 </div>
                 <div class="section new-dal">
-                    <section class="text-wrap">
+                    <section class="text-wrap aos-init" data-aos="fade">
                         <h2 class="ko-title">새로워진 달콤을 만나보세요</h2>
                         <p>
                             앱을 사용하는 고객님을 위한
@@ -275,45 +275,45 @@
                             달콤한 혜택이 준비되어 있습니다
                         </p>
                     </section>
-                    <div class="visual-wrap">
+                    <div class="visual-wrap aos-init" data-aos="fade">
                         <ul class="flex-center">
                             <li>
-                                <div class="img-wrap">
+                                <div class="img-wrap aos-init" data-aos="fade-right" data-aos-delay="300">
                                     <img class="img" src="img_dalkom/object_01.png" alt="circle background image">
                                 </div>
                             </li>
                             <li>
-                                <div class="img-wrap">
+                                <div class="img-wrap aos-init" data-aos="fade-right" data-aos-delay="300">
                                     <img class="img" src="img_dalkom/object_02.png" alt="circle background image">
                                 </div>
                             </li>
                             <li>
-                                <div class="img-wrap">
+                                <div class="img-wrap aos-init" data-aos="fade-right" data-aos-delay="300">
                                     <img class="img" src="img_dalkom/object_03.png" alt="circle background image">
                                 </div>
                             </li>
                             <li>
-                                <div class="img-wrap">
+                                <div class="img-wrap aos-init" data-aos="fade-right" data-aos-delay="300">
                                     <img class="img" src="img_dalkom/object_04.png" alt="circle background image">
                                 </div>
                             </li>
                             <li>
-                                <div class="img-wrap">
+                                <div class="img-wrap aos-init" data-aos="fade-left" data-aos-delay="300">
                                     <img class="img" src="img_dalkom/object_05.png" alt="circle background image">
                                 </div>
                             </li>
                             <li>
-                                <div class="img-wrap">
+                                <div class="img-wrap aos-init" data-aos="fade-left" data-aos-delay="300">
                                     <img class="img" src="img_dalkom/object_06.png" alt="circle background image">
                                 </div>
                             </li>
                             <li>
-                                <div class="img-wrap">
+                                <div class="img-wrap aos-init" data-aos="fade-left" data-aos-delay="300">
                                     <img class="img" src="img_dalkom/object_07.png" alt="circle background image">
                                 </div>
                             </li>
                             <li>
-                                <div class="img-wrap">
+                                <div class="img-wrap aos-init" data-aos="fade-left" data-aos-delay="300">
                                     <img class="img" src="img_dalkom/object_08.png" alt="circle background image">
                                 </div>
                             </li>
@@ -328,14 +328,14 @@
                 <div class="section supporter">
                     <div class="bg-wrap">
                         <section class="text-wrap">
-                            <h2 class="ko-title">
+                            <h2 class="ko-title aos-init" data-aos="fade" data-aos-easing="ease-out-sine" data-aos-duration="800">
                                 카페 창업의 꿈,
                                 <br>
                                 달콤이 서포터즈가
                                 <br class="only-mo">
                                 되겠습니다
                             </h2>
-                            <p>
+                            <p data-aos="fade" data-aos-duration="800" data-aos-delay="100" class="aos-init">
                                 달콤은 파트너 여러분들의 다양한
                                 <br class="only-mo">
                                 창업 조건에 맞는 '맞춤형 점포 개설'을 통해
@@ -481,10 +481,26 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000
+        AOS.init();
+    </script>
+    <script>
+        var mainTop = new Swiper('#mainTop', {
+            effect: 'fade',
+            slidesPerView: 1,
+            pagination: {
+                el: '#mainTop .swiper-pagination',
+                clickable: true,
+            }
         });
+        mainTop.init();
+
+        // $(document).bind("mousemove touchmove", function(e){
+        //     $(".circle-img").parallax(5, e);
+        //     $(".circle-big").parallax(10, e);
+        //     $(".circle-small").parallax(-5, e);
+        // });
     </script>
 </body>
 </html>

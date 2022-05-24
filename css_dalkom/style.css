@@ -46,6 +46,7 @@ a{
 
 body{
     color: var(--black);
+    line-height: 1.5;
 }
 
 div{
@@ -63,7 +64,7 @@ select{
     position: relative;
     vertical-align: middle;
     color: inherit;
-    background: #fff url(img_dalkom/select-plus.svg) no-repeat 100% 50%;
+    background: #fff url(../img_dalkom/select-plus.svg) no-repeat 100% 50%;
     background-size: 24px 24px;
 }
 
@@ -410,7 +411,7 @@ a.btn{
 }
 
 .section.first #mainTop{
-    /* overflow: hidden; */
+    overflow: visible;
     position: relative;
     top: 206px;
 }
@@ -620,8 +621,7 @@ a.btn{
     right: -142px;
     width: 419px;
     height: 424px;
-    background-image: url(img_dalkom/circle_img.png);
-    transform: translate(138.9px, 46px);
+    background-image: url(../img_dalkom/circle_img.png);
 }
 
 .section.imagine .parallax.circle-big{
@@ -629,8 +629,7 @@ a.btn{
     left: -77px;
     width: 293px;
     height: 325px;
-    background-image: url(img_dalkom/circle_big.svg);
-    transform: translate(69.45px, 23px);
+    background-image: url(../img_dalkom/circle_big.svg);
 }
 
 .section.imagine .parallax.circle-small{
@@ -638,15 +637,14 @@ a.btn{
     left: 216px;
     width: 77px;
     height: 61px;
-    background-image: url(img_dalkom/circle_small.svg);
-    transform: translate(-138.9px, -46px);
+    background-image: url(../img_dalkom/circle_small.svg);
 }
 
 /* section dal-story */
 
 #content.main .section.dal-story{
     color: var(--sapphire);
-    background: transparent url(img_dalkom/bg_dal_story.svg) no-repeat center bottom;
+    background: transparent url(../img_dalkom/bg_dal_story.svg) no-repeat center bottom;
     background-size: auto 513px;
     min-height: 1080px;
     height: 100vh;
@@ -905,7 +903,7 @@ a.btn{
     right: 0;
     left: 0;
     z-index: 2;
-    background: transparent url(img_dalkom/menu.png) repeat-x left top;
+    background: transparent url(../img_dalkom/menu.png) repeat-x left top;
     background-size: auto 375px;
     animation: movement 20s linear infinite running;
 }
@@ -993,7 +991,7 @@ a.btn{
     left: 0;
     right: 0;
     bottom: 0;
-    background: transparent url(img_dalkom/bg_phone_01.png) no-repeat center top;
+    background: transparent url(../img_dalkom/bg_phone_01.png) no-repeat center top;
     background-size: 100% auto;
 }
 
@@ -1009,7 +1007,7 @@ a.btn{
 .section.supporter .bg-wrap{
     padding: 170px;
     color: var(--white);
-    background: var(--cobalt) url(img_dalkom/bg_supporter.png) no-repeat center bottom;
+    background: var(--cobalt) url(../img_dalkom/bg_supporter.png) no-repeat center bottom;
     background-size: cover;
 }
 
