@@ -124,6 +124,13 @@ a.btn{
 
 /* header */
 
+.scroll-down #header.fixed{
+    top: -120px;
+}
+.scroll-up #header.fixed{
+    top: 0;
+}
+
 #header{
     padding: 0 16px;
     position: fixed;
@@ -287,8 +294,11 @@ a.btn{
     background: var(--orange-red);
     transform: scaleX(0);
     transform-origin: top right;
-
 }
+
+#nav > ul > li:last-child > a::before{
+    right: 0;
+} 
 
 #nav > ul > li > a:hover:before{
     transform: scaleX(1);
@@ -1149,7 +1159,7 @@ a.btn{
     background-color: transparent;
     font-size: 18px;
     font-weight: bold;
-    background-image: url(img_dalkom/select-plus.svg);
+    background-image: url(../img_dalkom/select-plus.svg);
 }
 
 #footer .copyright-wrap{
