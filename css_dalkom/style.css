@@ -122,6 +122,12 @@ a.btn{
     text-decoration: none;
 }
 
+/* only-con */
+.is-desktop .only-mo,
+.is-moile .only-pc{
+    display: none;
+}
+
 /* header */
 
 .scroll-down #header.fixed{
@@ -304,7 +310,7 @@ a.btn{
     transform: scaleX(1);
 }
 
-#nav > ul > li > a:hover{
+#nav li.current > a, #nav > ul > li > a:hover{
     color: var(--orange-red);
 }
 
