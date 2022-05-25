@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    mobMenu();
     function mobMenu(){
         $('body').on('mouseenter','#nav > ul > li > a[target]', function(){
             $('#nav').addClass('not-hover');
@@ -55,7 +56,6 @@ function scrollCheck(){
         $('body').addClass('scroll-has').removeClass('scroll-zero');
     }
 }
-
 // navCurrent
 function navCurrent(dep1, dep2){
     var dep1eq = dep1 - 1;

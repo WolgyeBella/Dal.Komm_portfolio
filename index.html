@@ -7,6 +7,7 @@
     <title>Dal.Komm</title>
     <link rel="shortcut icon" href="img_dalkom/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css_dalkom/style.css">
+    <link rel="stylesheet" href="css_dalkom/layout.css">
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Fredoka+One&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
@@ -56,7 +57,7 @@
                                 <li><a href="#">달콤 스토리</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#" target="shop" class="shop">SHOP</a></li>
                     </ul>
                 </nav>
             </div>
@@ -499,11 +500,19 @@
         });
         mainTop.init();
 
-        // $(document).bind("mousemove touchmove", function(e){
-        //     $(".circle-img").parallax(5, e);
-        //     $(".circle-big").parallax(10, e);
-        //     $(".circle-small").parallax(-5, e);
-        // });
+        $.fn.parallax = function(resistance, mouse){
+            $el = $(this);
+            TweenLite.to($el, 0.5, {
+                x: -((mouse.clientX - window.innerWidth / 2) / resistance),
+                y: -((mouse.clientY - window.innerHeight / 2) / resistance)
+            });
+        }
+
+        $(document).bind("mousemove touchmove", function(e){
+            $(".circle-img").parallax(5, e);
+            $(".circle-big").parallax(10, e);
+            $(".circle-small").parallax(-5, e);
+        });
     </script>
 </body>
 </html>
