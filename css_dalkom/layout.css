@@ -25,3 +25,27 @@ body{
         min-height: calc(100% - 56px);
     }
 }
+
+/* max-wrap */
+.max-wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+@media all and (min-widht:961px){
+    .max-wrap{
+        max-width: 1440px;
+    }
+}
+
+/* header */
+@media all and (max-width: 960px){
+    body:not(.opened-mo-nav) #header{
+        overflow: hidden;
+    }
+}
+@media all and (max-width: 1440px){
+   #header{
+       padding-left: 16px;
+       padding-right: 16px;
+   }
+}

@@ -7,7 +7,42 @@ $(document).ready(function(){
         $('body').on('mouseleave','#nav > ul > li > a[target]', function(){
             $('#nav').removeClass('not-hover');
         });
-    } 
+
+        $('body').on('click', '.menu-toggle', function(e){
+            if($('body').hasClass('opened-mo-nav')){
+                $('body').removeClass('opened-mo-nav');
+                $('html').removeClass('opened-nav');
+                $(this).removeClass('is-active');
+            }else{
+                $('body').addClass('opened-mo-nav');
+                $('html').addClass('opened-nav');
+                $(this).addClass('is-active');
+            }
+        });
+
+        $('body').on('click','#nav > ul > li > a', function(e){
+            var moTarget = $(this).closest('li'),
+                realTarget = $(this).attr('href'),
+                brTarget = $(this).attr('target');
+
+            if($('body').hasClass('opened-mo-nav')){
+                if(brTarget != 'shop'){
+                    e.preventDefault();
+                }
+
+                if($(moTarget).hasClass('active')){
+                    location.href = realTarget;
+                }else{
+                    $(moTarget).addClass('active');
+                    $(moTarget).siblings('li').removeClass('active');
+                }
+            }
+        });
+    }
+    
+    $('.btn.floating-close').on('click', function(e){
+        $('.floating').removeClass('active');
+    });
 });
 
     getViewports();

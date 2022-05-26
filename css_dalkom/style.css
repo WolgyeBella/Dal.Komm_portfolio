@@ -524,6 +524,7 @@ a.btn{
     right: 0;
     bottom: 0;
     height: 0;
+    overflow: hidden;
 }
 
 .floating .max-wrap{
