@@ -124,7 +124,7 @@ a.btn{
 
 /* only-con */
 .is-desktop .only-mo,
-.is-moile .only-pc{
+.is-mobile .only-pc{
     display: none;
 }
 
@@ -392,13 +392,9 @@ a.btn{
     max-width: 1040px;
 }
 
-#mainTop .img-wrap img{
+.img-wrap img{
     display: block;
     width: 100%;
-}
-
-#mainTop .img-wrap img.only-mo{
-    display: none;
 }
 
 #mainTop .text-wrap{

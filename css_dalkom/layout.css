@@ -270,6 +270,26 @@ body.opened-mo-nav{
 
 /* main */
 @media all and (max-width:750px){
+    .breadcrumbs + .max-wrap,
+	.page-title + .list-wrap,
+	.page-title + .store-info-wrap,
+	.field  + .button-area,
+	.data-list:not([class*="pin-"]) + .btn.circle.more,
+	.max-wrap > .flex + .flex{
+        margin-top: 60px;
+    }
+	.page-title + .tabs-wrap{
+        margin-top: calc(60px - 4px);
+    }
+	.pagination,
+	.page-title + .form,
+	.page-title-wrap + .form,
+	.page-title + .filter-wrap,
+	.filter-wrap + .list-wrap,
+	.list-wrap .data-list + .pagination,
+	.tabs-wrap + .max-wrap{
+        margin-top: 60px;
+    }
     #content.main{
         font-size: 4.800vw;
     }
@@ -382,5 +402,7 @@ body.opened-mo-nav{
         top: -42px;
     }
 }
+
+/* section.imagine  */
 
 /* footer */
