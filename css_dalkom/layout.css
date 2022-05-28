@@ -689,4 +689,23 @@ body.opened-mo-nav{
     }
 }
 
+/* section.supporter */
+@media all and (max-width: 750px){
+    #content.main .section.supporter .bg-wrap{
+        padding: 33.600vw 0 33.333vw;
+        background-image: url(../img_dalkom/bg_supporter_mo.svg);
+    }
+    #content.main .section.supporter .ko-title + p{
+        margin-top: 4.267vw;
+    }
+    #content.main .section.supporter p + .btn{
+        margin-top: 10.667vw;
+    }
+    #content.main .section.supporter .btn{
+        width: 60.533vw;
+        height: 58px;
+        line-height: 58px;
+    }
+}
+
 /* footer */
