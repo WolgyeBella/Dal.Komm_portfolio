@@ -269,6 +269,29 @@ body.opened-mo-nav{
 }
 
 /* main */
+.breadcrumbs + .max-wrap,
+.page-title + .list-wrap,
+.page-title + .store-info-wrap,
+.field  + .button-area{
+    margin-top: 64px;
+}
+.page-title + .tabs-wrap{
+    margin-top: calc(96px - 14px);
+}
+.pagination,
+.page-title + .form,
+.page-title-wrap + .form,
+.page-title + .filter-wrap,
+.filter-wrap + .list-wrap,
+.list-wrap .data-list + .pagination,
+.tabs-wrap + .max-wrap,
+.max-wrap > .flex + .flex{
+    margin-top: 96px;
+}
+.data-list:not([class*="pin-"]) + .btn.circle.more{
+    margin-top: 128px;
+}
+
 @media all and (max-width:750px){
     .breadcrumbs + .max-wrap,
 	.page-title + .list-wrap,
@@ -366,7 +389,7 @@ body.opened-mo-nav{
     .section.first #mainTop .text-wrap{
         right: 0;
         bottom: 0;
-        height: 40,800vw;
+        height: 40.800vw;
         font-size: 18px;
         text-align: right;
     }
@@ -404,5 +427,75 @@ body.opened-mo-nav{
 }
 
 /* section.imagine  */
+@media all and (max-width: 750px){
+    .section.imagine .section-title.en{
+        font-size: 3.375rem;
+    }
+    .section.imagine .sub-title + .section-title{
+        margin-top: 28px;
+    }
+    .section.imagine .fixed-bg > span{
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+    }
+    .section.imagine .fixed-bg > span.circle-img{
+        bottom: 44px;
+        left: -29px;
+        width: 164px;
+        height: 165px;
+    }
+    .section.imagine .fixed-bg > span.circle-small{
+        top: 58px;
+        right: 21px;
+        width: 64px;
+        height: 66px;
+    }
+    .section.imagine .parallax.circle-img{
+        top: auto;
+        bottom: 0;
+        right: -9.067vw;
+        width: 38.933vw;
+        height: 39.467vw;
+    }
+    .section.imagine .parallax.circle-big{
+        bottom: auto;
+        top: 0;
+        left: -9.067vw;
+        width: 27.200vw;
+        height: 27.733vw;
+    }
+    .section.imagine .parallax.circle-small{
+        bottom: auto;
+        top: 20.533vw;
+        left: 22.400vw;
+        width: 6.667vw;
+        height: 5.333vw;
+    }
+}
+@media all and (min-width:751px) and (max-width:1287px){
+    .section.imagine .parallax.circle-img{
+        right: -11.025vw;
+        width: 32.531vw;
+        height: 39.467vw;
+    }
+    .section.imagine .parallax.circle-big{
+        bottom: 6.988vw;
+        left: -5.978vw;
+        width: 22.748vw;
+        height: 25.233vw;
+    }
+    .section.imagine .parallax.circle-small{
+        bottom: 8.851vw;
+        left: 16.770vw;
+        width: 5.978vw;
+        height: 4.736vw;
+    }
+}
+
+/* section.dal-story */
+
 
 /* footer */
