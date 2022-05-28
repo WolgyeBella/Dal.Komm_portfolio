@@ -620,4 +620,39 @@ body.opened-mo-nav{
     }
 }
 
+/* section.colorful */
+@media all and (max-width:750px){
+    #content.main .section.colorful{
+        padding-top: 32vw;
+    }
+    .section.colorful .img-moving{
+        margin-top: 38.400vw;
+        height: 255px;
+    }
+    .section.colorful .img-moving .bottom{
+        height: 130px;
+    }
+    .section.colorful .img-moving .menu{
+        background-size: auto 255px;
+    }
+    @keyframes movement {
+        0%{
+            background-position: 0px 0px;
+        }
+        100%{
+            background-position: 2426px 0px;
+        }
+    }
+}
+@media all and (min-width: 751px){
+    @keyframes movement {
+        0%{
+            background-position: 0px 0px;
+        }
+        100%{
+            background-position: 3567px 0px;
+        }
+    }
+}
+
 /* footer */

@@ -855,15 +855,6 @@ a.btn{
     animation: movement 20s linear infinite running;
 }
 
-@keyframes movement {
-    0%{
-        background-position: 0px 0px;
-    }
-    100%{
-        background-position: 3567px 0px;
-    }
-}
-
 /* section new-dal */
 .section.new-dal{
     background: var(--white);
