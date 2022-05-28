@@ -496,6 +496,18 @@ body.opened-mo-nav{
 }
 
 /* section.dal-story */
-
+@media all and (max-width:750px){
+    #content.main .section.dal-story{
+        background-position: 49% bottom;
+        background-size: auto 84vw;
+    }
+    .section.dal-story .sub-title strong img{
+        margin-left: 1.5vw;
+        height: 7.200vw;
+    }
+    .section.dal-story .text-wrap{
+        padding-bottom: 72.267vw;
+    }
+}
 
 /* footer */
