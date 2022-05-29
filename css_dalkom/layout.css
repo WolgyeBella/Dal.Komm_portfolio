@@ -34,19 +34,19 @@ body{
     margin: 0;
     padding: 0;
 }
-@media all and (max-widht: 750px){
+@media all and (max-width: 750px){
     body{
         min-width: 320px;
     }
 }
-@media all and (min-widht: 751px){
+@media all and (min-width: 751px){
     body{
         min-width: 750px;
     }
 }
 
 /* wrap */
-@media all and (max-widht: 750px){
+@media all and (max-width: 750px){
     #wrap{
         padding-top: 56px;
     }
@@ -60,7 +60,7 @@ body{
     width: 100%;
     margin: 0 auto;
 }
-@media all and (min-widht:961px){
+@media all and (min-width:961px){
     .max-wrap{
         max-width: 1440px;
     }
@@ -882,7 +882,9 @@ body.opened-mo-nav{
     .floating .floating-content .img-wrap{
         left: 0;
         top: -53px;
-        width: 66px;
+        width: 66%;
+        height: auto;
+        bottom: auto;
         max-height: 88px;
     }
     .floating .floating-content .text-wrap{
@@ -895,7 +897,7 @@ body.opened-mo-nav{
         position: absolute;
         bottom: 1px;
         right: -5px;
-        content: "";
+        content: '';
         display: block;
         width: 0;
         height: 0;

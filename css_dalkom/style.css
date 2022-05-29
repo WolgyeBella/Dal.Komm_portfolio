@@ -232,7 +232,12 @@ a.btn{
 
 #nav > ul > li:last-child > a::before{
     right: 0;
-} 
+}
+
+#header nav > ul > li:last-child > ul{
+    padding-left: 0;
+    text-align: right;
+}
 
 #nav > ul > li > a:hover:before{
     transform: scaleX(1);
@@ -257,6 +262,7 @@ a.btn{
     display: flex;
     flex-direction: column;
     visibility: hidden;
+    opacity: 0;
     /* transition: all 300ms ease-in-out; */
 }
 
@@ -274,6 +280,15 @@ a.btn{
 #nav > ul > li > a + ul > li  a:hover{
     color: var(--orange-red);
 }
+
+#header nav > ul > li > a + ul{
+    padding: 40px 0 40px 44px;
+}
+
+#header nav ul + .btn{
+    margin-left: 52px;
+}
+
 
 /* container */
 #container{
@@ -495,12 +510,12 @@ a.btn{
 } */
 
 .floating-content .text-wrap{
-    width: 174px;
+    /* width: 174px;
     height: 156px;
     padding: 66px 24px 24px 24px;
     text-align: center;
     font-size: 16px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0; */
     overflow: hidden;
     background-color: var(--red-orange);
     color: #ffffff;
