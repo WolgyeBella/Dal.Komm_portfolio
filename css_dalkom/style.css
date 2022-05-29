@@ -855,10 +855,6 @@ a.btn{
     box-sizing: border-box;
 }
 
-#footer .only-mo{
-    display: none;
-}
-
 #footer > .max-wrap{
     display: flex;
     justify-content: space-between;
@@ -889,11 +885,6 @@ a.btn{
 #footer .ico{
     display: inline-block;
     color: var(--black);
-    /* visibility: hidden; */
-}
-
-#footer .ico.acc-arr{
-    visibility: hidden;
 }
 
 #footer .ico > span{
@@ -909,36 +900,18 @@ a.btn{
     z-index: -1;
 }
 
-#footer .max-wrap > ul strong + ul{
-    margin-top: 32px;
-}
-
-#footer .max-wrap > ul a.em{
-    color: var(--orange-red);
-}
-
 #footer .max-wrap > ul strong + ul li a{
     position: relative;
     color: rgba(34, 34, 34, 0.7);
 }
 
-#footer .max-wrap > ul strong + ul li a::before{
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    background: var(--black);
-    transform: scaleX(0);
-    transform-origin: top right;
-    transition: transform 500ms ease-in-out;
-}
-
 #footer .max-wrap > ul strong + ul li a:not(.em):hover{
     opacity: 1;
     color: var(--black);
+}
+
+#footer > .max-wrap > ul a.em{
+    color: var(--orange-red);
 }
 
 #footer .max-wrap > ul strong + ul li a:hover:before{

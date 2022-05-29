@@ -5,6 +5,11 @@ $(document).ready(function(){
         getViewports();
     });
 
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1500,
+    });
+
     // scroll
     var headerFix = 120,
     gnbScrollTop = 0,
@@ -81,6 +86,19 @@ function mobMenu(){
                 $(moTarget).addClass('active');
                 $(moTarget).siblings('li').removeClass('active');
             }
+        }
+    });
+
+    $('body').on('click', '#footer .btn.more', function(e){
+        e.preventDefault();
+
+        var container = $(this).closest('li');
+
+        if($(container).hasClass('active')){
+            $(container).removeClass('active');
+        }else{
+            $(container).addClass('active');
+            $(container).siblings('li').removeClass('active');
         }
     });
 }
