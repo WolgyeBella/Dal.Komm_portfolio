@@ -36,7 +36,7 @@
                 </button>
                 <nav id="nav" class="nav">
                     <ul>
-                        <li class="active"><a href="#">Dal.Komm</a>
+                        <li><a href="#">Dal.Komm</a>
                             <ul>
                                 <li><a href="#">브랜드 이야기</a></li>
                                 <li><a href="#">App 소개</a></li>
@@ -139,7 +139,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="floating active">
+                <div class="floating active" id="sticker_float">
                     <div class="max-wrap">
                         <a href="#">
                             <div class="floating-content">
@@ -161,6 +161,13 @@
                         </button>
                     </div>
                 </div>
+                <script>
+                    $(document).ready(function(){
+                        setTimeout(function(){
+                            $('#sticer_float').animate({'opacity':"1.0"},500);
+                        },200);
+                    });
+                </script>
                 <div class="section flex-center imagine">
                     <section class="text-wrap aos-init" data-aos="fade-up">
                         <h2 class="sub-title gothic">

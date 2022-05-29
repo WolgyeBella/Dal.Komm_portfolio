@@ -138,7 +138,6 @@ a.btn{
 }
 
 #header{
-    padding: 0 16px;
     position: fixed;
     left: 0;
     right: 0;
@@ -147,9 +146,20 @@ a.btn{
 }
 
 #header .max-wrap{
+    padding: 0;
+    height: inherit;
+}
+
+#header .max-wrap, #header nav{
+    background-color: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#header .logo img{
+    display: block;
+    width: 117px;
 }
 
 #header h1{
@@ -163,132 +173,25 @@ a.btn{
 }
 
 /* navigation */
-#nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#nav::before{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    display: block;
-    width: 100%;
-    content: "";
-    height: 0;
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-    background-color: var(--light-khaki);
-}
-
-#nav:hover::before{
-    height: 206px;
-    opacity: 1;
-    z-index: 2;
-    visibility: visible;
-}
-
-#nav.not-hover:before{
-    height: 0;
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-}
-
-#nav > ul{
-    display: flex;
-    justify-content: flex-start;
-    height: 120px;
-}
-
-#nav > ul > li{
-    position: relative;
-    box-sizing: border-box;
-}
-
-#nav > ul > li > a{
-    position: relative;
-    height: 120px;
-    line-height: 120px;
-    padding: 0 44px;
-    font-weight: bold;
-}
-
-#nav > ul > li > a::before{
-    content: "";
-    display: block;
-    position: absolute;
-    right: 44px;
-    bottom: 0;
-    left: 44px;
-    height: 2px;
-    background: var(--orange-red);
-    transform: scaleX(0);
-    transform-origin: top right;
-}
-
-#nav > ul > li:last-child > a::before{
-    right: 0;
-}
-
-#header nav > ul > li:last-child > ul{
-    padding-left: 0;
-    text-align: right;
-}
-
-#nav > ul > li > a:hover:before{
-    transform: scaleX(1);
-}
-
-#nav li.current > a, #nav > ul > li > a:hover{
+#header nav a:hover,
+#header nav a:focus,
+#header nav > ul > li:hover > a,
+#header nav > ul > li:focus > a,
+#header nav li.current > a,
+#header nav > ul > li > a:hover,
+#header nav > ul > li > a:focus{
     color: var(--orange-red);
 }
 
-#header #nav > ul > li > a::before, #header #nav:before{
-    transition: all 300ms ease-in-out;
+#header nav > ul > li > a > span{
+    position: relative;
 }
 
-#nav > ul > li > a + ul{
+#header nav > ul > li > a > span > .ico{
     position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 120%;
-    padding: 40px 0 40px 44px;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-    opacity: 0;
-    /* transition: all 300ms ease-in-out; */
+    top: 4px;
+    right: -8px;
 }
-
-#nav > ul > li:hover > ul{
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0.3s;
-}
-
-#nav > ul > li > a + ul > li  a{
-    padding: 8px 0;
-    transition: all 300ms;
-}
-
-#nav > ul > li > a + ul > li  a:hover{
-    color: var(--orange-red);
-}
-
-#header nav > ul > li > a + ul{
-    padding: 40px 0 40px 44px;
-}
-
-#header nav ul + .btn{
-    margin-left: 52px;
-}
-
 
 /* container */
 #container{
